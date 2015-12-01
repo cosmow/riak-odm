@@ -34,7 +34,7 @@ use CosmoW\ODM\Riak\Query\ReferencePrimer;
  * in order to return results as hydrated document class instances. Hydration
  * behavior may be controlled with the {@link Cursor::hydrate()} method.
  *
- * For compatibility, this class also extends Doctrine\Riak\Cursor.
+ * For compatibility, this class also extends CosmoW\Riak\Cursor.
  *
  * @since  1.0
  * @author Jonathan H. Wage <jonwage@gmail.com>

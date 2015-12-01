@@ -37,7 +37,7 @@ use CosmoW\ODM\Riak\RiakException;
  * @since       1.0
  * @author      Jonathan H. Wage <jonwage@gmail.com>
  */
-class Query extends \Doctrine\Riak\Query\Query
+class Query extends \CosmoW\Riak\Query\Query
 {
     const HINT_REFRESH = 1;
     const HINT_SLAVE_OKAY = 2;

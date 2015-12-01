@@ -31,7 +31,7 @@ use CosmoW\ODM\Riak\UnitOfWork;
  * @since       1.0
  * @author      Jonathan H. Wage <jonwage@gmail.com>
  */
-class Builder extends \Doctrine\Riak\Query\Builder
+class Builder extends \CosmoW\Riak\Query\Builder
 {
     /**
      * The DocumentManager instance for this query
