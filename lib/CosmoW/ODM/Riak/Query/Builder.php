@@ -31,7 +31,7 @@ use CosmoW\ODM\Riak\UnitOfWork;
  * @since       1.0
  * @author      Jonathan H. Wage <jonwage@gmail.com>
  */
-class Builder extends \Doctrine\Riak\Query\Builder
+class Builder extends \CosmoW\Riak\Query\Builder
 {
     /**
      * The DocumentManager instance for this query
@@ -43,7 +43,7 @@ class Builder extends \Doctrine\Riak\Query\Builder
     /**
      * The ClassMetadata instance.
      *
-     * @var \Doctrine\ODM\Riak\Mapping\ClassMetadata
+     * @var \CosmoW\ODM\Riak\Mapping\ClassMetadata
      */
     private $class;
 

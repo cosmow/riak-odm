@@ -19,22 +19,22 @@
 
 namespace CosmoW\ODM\Riak;
 
-use Doctrine\Riak\Collection;
-use Doctrine\Riak\Connection;
-use Doctrine\Riak\CursorInterface;
-use Doctrine\Riak\EagerCursor as BaseEagerCursor;
+use CosmoW\Riak\Collection;
+use CosmoW\Riak\Connection;
+use CosmoW\Riak\CursorInterface;
+use CosmoW\Riak\EagerCursor as BaseEagerCursor;
 use CosmoW\ODM\Riak\Mapping\ClassMetadata;
 use CosmoW\ODM\Riak\Query\Query;
 use CosmoW\ODM\Riak\Query\ReferencePrimer;
 
 /**
- * Wrapper for the Doctrine\Riak\Cursor class.
+ * Wrapper for the CosmoW\Riak\Cursor class.
  *
- * This class composes a Doctrine\Riak\Cursor instance and wraps its methods
+ * This class composes a CosmoW\Riak\Cursor instance and wraps its methods
  * in order to return results as hydrated document class instances. Hydration
  * behavior may be controlled with the {@link Cursor::hydrate()} method.
  *
- * For compatibility, this class also extends Doctrine\Riak\Cursor.
+ * For compatibility, this class also extends CosmoW\Riak\Cursor.
  *
  * @since  1.0
  * @author Jonathan H. Wage <jonwage@gmail.com>
@@ -44,7 +44,7 @@ use CosmoW\ODM\Riak\Query\ReferencePrimer;
 class Cursor implements CursorInterface
 {
     /**
-     * The Doctrine\Riak\Cursor instance being wrapped.
+     * The CosmoW\Riak\Cursor instance being wrapped.
      *
      * @var CursorInterface
      */
@@ -115,7 +115,7 @@ class Cursor implements CursorInterface
     }
 
     /**
-     * Return the wrapped Doctrine\Riak\Cursor instance.
+     * Return the wrapped CosmoW\Riak\Cursor instance.
      *
      * @return CursorInterface
      */
@@ -127,7 +127,7 @@ class Cursor implements CursorInterface
     /**
      * Return the database connection for this cursor.
      *
-     * @see \Doctrine\Riak\Cursor::getConnection()
+     * @see \CosmoW\Riak\Cursor::getConnection()
      * @return Connection
      */
     public function getConnection()

@@ -24,7 +24,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\EventManager;
 use Doctrine\Common\NotifyPropertyChanged;
 use Doctrine\Common\PropertyChangedListener;
-use Doctrine\Riak\GridFSFile;
+use CosmoW\Riak\GridFSFile;
 use CosmoW\ODM\Riak\Event\LifecycleEventArgs;
 use CosmoW\ODM\Riak\Hydrator\HydratorFactory;
 use CosmoW\ODM\Riak\Mapping\ClassMetadata;

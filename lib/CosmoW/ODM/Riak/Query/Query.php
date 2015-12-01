@@ -19,11 +19,11 @@
 
 namespace CosmoW\ODM\Riak\Query;
 
-use Doctrine\Riak\Collection;
-use Doctrine\Riak\Cursor as BaseCursor;
-use Doctrine\Riak\CursorInterface;
-use Doctrine\Riak\EagerCursor as BaseEagerCursor;
-use Doctrine\Riak\Iterator;
+use CosmoW\Riak\Collection;
+use CosmoW\Riak\Cursor as BaseCursor;
+use CosmoW\Riak\CursorInterface;
+use CosmoW\Riak\EagerCursor as BaseEagerCursor;
+use CosmoW\Riak\Iterator;
 use CosmoW\ODM\Riak\Cursor;
 use CosmoW\ODM\Riak\DocumentManager;
 use CosmoW\ODM\Riak\EagerCursor;
@@ -37,7 +37,7 @@ use CosmoW\ODM\Riak\RiakException;
  * @since       1.0
  * @author      Jonathan H. Wage <jonwage@gmail.com>
  */
-class Query extends \Doctrine\Riak\Query\Query
+class Query extends \CosmoW\Riak\Query\Query
 {
     const HINT_REFRESH = 1;
     const HINT_SLAVE_OKAY = 2;
@@ -223,7 +223,7 @@ class Query extends \Doctrine\Riak\Query\Query
     /**
      * Execute the query and returns the results.
      *
-     * @throws \Doctrine\ODM\Riak\RiakException
+     * @throws \CosmoW\ODM\Riak\RiakException
      * @return mixed
      */
     public function execute()
@@ -287,7 +287,7 @@ class Query extends \Doctrine\Riak\Query\Query
      * and set the hydrate option and UnitOfWork hints. This occurs in addition
      * to any preparation done by the base Query class.
      *
-     * @see \Doctrine\Riak\Cursor::prepareCursor()
+     * @see \CosmoW\Riak\Cursor::prepareCursor()
      * @param BaseCursor $cursor
      * @return CursorInterface
      */
@@ -296,7 +296,7 @@ class Query extends \Doctrine\Riak\Query\Query
         $cursor = parent::prepareCursor($cursor);
 
         // Convert the base Cursor into an ODM Cursor
-        $cursorClass = ( ! empty($this->query['eagerCursor'])) ? 'Doctrine\ODM\Riak\EagerCursor' : 'Doctrine\ODM\Riak\Cursor';
+        $cursorClass = ( ! empty($this->query['eagerCursor'])) ? 'CosmoW\ODM\Riak\EagerCursor' : 'CosmoW\ODM\Riak\Cursor';
         $cursor = new $cursorClass($cursor, $this->dm->getUnitOfWork(), $this->class);
 
         $cursor->hydrate($this->hydrate);
