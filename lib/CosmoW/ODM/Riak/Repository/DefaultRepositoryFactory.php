@@ -2,7 +2,7 @@
 
 namespace Doctrine\ODM\Riak\Repository;
 
-use Doctrine\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\DocumentManager;
 
 /**
  * This factory is used to create default repository objects for entities at runtime.

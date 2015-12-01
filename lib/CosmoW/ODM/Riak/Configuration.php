@@ -22,9 +22,9 @@ namespace Doctrine\ODM\Riak;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Cache\Cache;
 use Doctrine\Common\Persistence\Mapping\Driver\MappingDriver;
-use Doctrine\ODM\Riak\Mapping\Driver\AnnotationDriver;
-use Doctrine\ODM\Riak\Repository\DefaultRepositoryFactory;
-use Doctrine\ODM\Riak\Repository\RepositoryFactory;
+use CosmoW\ODM\Riak\Mapping\Driver\AnnotationDriver;
+use CosmoW\ODM\Riak\Repository\DefaultRepositoryFactory;
+use CosmoW\ODM\Riak\Repository\RepositoryFactory;
 
 /**
  * Configuration class for the DocumentManager. When setting up your DocumentManager

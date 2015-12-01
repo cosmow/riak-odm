@@ -19,7 +19,7 @@
 
 namespace Doctrine\ODM\Riak\Mapping\Annotations;
 
-use Doctrine\ODM\Riak\Utility\CollectionHelper;
+use CosmoW\ODM\Riak\Utility\CollectionHelper;
 
 /** @Annotation */
 final class ReferenceMany extends AbstractField

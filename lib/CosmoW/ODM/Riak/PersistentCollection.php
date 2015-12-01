@@ -20,8 +20,8 @@
 namespace Doctrine\ODM\Riak;
 
 use Doctrine\Common\Collections\Collection as BaseCollection;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\Utility\CollectionHelper;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\Utility\CollectionHelper;
 
 /**
  * A PersistentCollection represents a collection of elements that have persistent state.

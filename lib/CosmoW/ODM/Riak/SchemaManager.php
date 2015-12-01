@@ -19,8 +19,8 @@
 
 namespace Doctrine\ODM\Riak;
 
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\Mapping\ClassMetadataFactory;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\Mapping\ClassMetadataFactory;
 
 class SchemaManager
 {

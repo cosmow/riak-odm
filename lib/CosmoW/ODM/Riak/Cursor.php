@@ -23,9 +23,9 @@ use Doctrine\Riak\Collection;
 use Doctrine\Riak\Connection;
 use Doctrine\Riak\CursorInterface;
 use Doctrine\Riak\EagerCursor as BaseEagerCursor;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\Query\Query;
-use Doctrine\ODM\Riak\Query\ReferencePrimer;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\Query\Query;
+use CosmoW\ODM\Riak\Query\ReferencePrimer;
 
 /**
  * Wrapper for the Doctrine\Riak\Cursor class.

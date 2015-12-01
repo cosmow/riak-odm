@@ -24,11 +24,11 @@ use Doctrine\Riak\Cursor as BaseCursor;
 use Doctrine\Riak\CursorInterface;
 use Doctrine\Riak\EagerCursor as BaseEagerCursor;
 use Doctrine\Riak\Iterator;
-use Doctrine\ODM\Riak\Cursor;
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\EagerCursor;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\RiakException;
+use CosmoW\ODM\Riak\Cursor;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\EagerCursor;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\RiakException;
 
 /**
  * ODM Query wraps the raw Doctrine Riak queries to add additional functionality

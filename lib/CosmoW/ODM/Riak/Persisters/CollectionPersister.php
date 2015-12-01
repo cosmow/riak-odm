@@ -19,12 +19,12 @@
 
 namespace Doctrine\ODM\Riak\Persisters;
 
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\LockException;
-use Doctrine\ODM\Riak\PersistentCollection;
-use Doctrine\ODM\Riak\Persisters\PersistenceBuilder;
-use Doctrine\ODM\Riak\UnitOfWork;
-use Doctrine\ODM\Riak\Utility\CollectionHelper;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\LockException;
+use CosmoW\ODM\Riak\PersistentCollection;
+use CosmoW\ODM\Riak\Persisters\PersistenceBuilder;
+use CosmoW\ODM\Riak\UnitOfWork;
+use CosmoW\ODM\Riak\Utility\CollectionHelper;
 
 /**
  * The CollectionPersister is responsible for persisting collections of embedded

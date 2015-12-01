@@ -19,7 +19,7 @@
 
 namespace Doctrine\ODM\Riak\Tools\Console\Helper;
 
-use Doctrine\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\DocumentManager;
 use Symfony\Component\Console\Helper\Helper;
 
 /**

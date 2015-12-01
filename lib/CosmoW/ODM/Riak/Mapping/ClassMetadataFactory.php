@@ -22,11 +22,11 @@ namespace Doctrine\ODM\Riak\Mapping;
 use Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory;
 use Doctrine\Common\Persistence\Mapping\ClassMetadata as ClassMetadataInterface;
 use Doctrine\Common\Persistence\Mapping\ReflectionService;
-use Doctrine\ODM\Riak\Configuration;
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\Events;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\Mapping\MappingException;
+use CosmoW\ODM\Riak\Configuration;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\Events;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\Mapping\MappingException;
 
 /**
  * The ClassMetadataFactory is used to create ClassMetadata objects that contain all the

@@ -19,8 +19,8 @@
 
 namespace Doctrine\ODM\Riak\Id;
 
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
 
 /**
  * AlnumGenerator is responsible for generating cased alpha-numeric unique identifiers.

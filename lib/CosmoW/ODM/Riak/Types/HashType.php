@@ -19,7 +19,7 @@
 
 namespace Doctrine\ODM\Riak\Types;
 
-use Doctrine\ODM\Riak\RiakException;
+use CosmoW\ODM\Riak\RiakException;
 
 /**
  * The Hash type.

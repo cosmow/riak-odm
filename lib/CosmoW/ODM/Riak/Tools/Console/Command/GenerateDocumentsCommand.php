@@ -22,9 +22,9 @@ namespace Doctrine\ODM\Riak\Tools\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console;
-use Doctrine\ODM\Riak\Tools\Console\MetadataFilter;
-use Doctrine\ODM\Riak\Tools\DocumentGenerator;
-use Doctrine\ODM\Riak\Tools\DisconnectedClassMetadataFactory;
+use CosmoW\ODM\Riak\Tools\Console\MetadataFilter;
+use CosmoW\ODM\Riak\Tools\DocumentGenerator;
+use CosmoW\ODM\Riak\Tools\DisconnectedClassMetadataFactory;
 
 /**
  * Command to generate document classes and method stubs from your mapping information.

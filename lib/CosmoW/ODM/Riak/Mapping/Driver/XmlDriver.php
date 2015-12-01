@@ -21,8 +21,8 @@ namespace Doctrine\ODM\Riak\Mapping\Driver;
 
 use Doctrine\Common\Persistence\Mapping\ClassMetadata;
 use Doctrine\Common\Persistence\Mapping\Driver\FileDriver;
-use Doctrine\ODM\Riak\Utility\CollectionHelper;
-use Doctrine\ODM\Riak\Mapping\ClassMetadataInfo;
+use CosmoW\ODM\Riak\Utility\CollectionHelper;
+use CosmoW\ODM\Riak\Mapping\ClassMetadataInfo;
 
 /**
  * XmlDriver is a metadata driver that enables mapping through XML files.

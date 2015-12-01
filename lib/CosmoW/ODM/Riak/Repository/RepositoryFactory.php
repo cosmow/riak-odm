@@ -2,7 +2,7 @@
 
 namespace Doctrine\ODM\Riak\Repository;
 
-use Doctrine\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\DocumentManager;
 
 /**
  * Interface for document repository factory.

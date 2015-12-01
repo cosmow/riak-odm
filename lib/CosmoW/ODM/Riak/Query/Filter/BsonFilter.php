@@ -19,8 +19,8 @@
 
 namespace Doctrine\ODM\Riak\Query\Filter;
 
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
 
 /**
  * The base class that user defined filters should extend.

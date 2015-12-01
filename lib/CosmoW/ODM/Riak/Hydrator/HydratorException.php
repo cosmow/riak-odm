@@ -19,7 +19,7 @@
 
 namespace Doctrine\ODM\Riak\Hydrator;
 
-use Doctrine\ODM\Riak\RiakException;
+use CosmoW\ODM\Riak\RiakException;
 
 /**
  * Riak ODM Hydrator Exception

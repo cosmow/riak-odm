@@ -19,7 +19,7 @@
 
 namespace Doctrine\ODM\Riak\Event;
 
-use Doctrine\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\DocumentManager;
 
 /**
  * Class that holds event arguments for a preLoad event.

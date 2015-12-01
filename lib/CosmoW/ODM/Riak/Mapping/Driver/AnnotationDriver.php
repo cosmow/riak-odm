@@ -24,10 +24,10 @@ use Doctrine\Common\Annotations\AnnotationRegistry;
 use Doctrine\Common\Annotations\Reader;
 use Doctrine\Common\Persistence\Mapping\ClassMetadata;
 use Doctrine\Common\Persistence\Mapping\Driver\AnnotationDriver as AbstractAnnotationDriver;
-use Doctrine\ODM\Riak\Events;
-use Doctrine\ODM\Riak\Mapping\Annotations as ODM;
-use Doctrine\ODM\Riak\Mapping\ClassMetadataInfo;
-use Doctrine\ODM\Riak\Mapping\MappingException;
+use CosmoW\ODM\Riak\Events;
+use CosmoW\ODM\Riak\Mapping\Annotations as ODM;
+use CosmoW\ODM\Riak\Mapping\ClassMetadataInfo;
+use CosmoW\ODM\Riak\Mapping\MappingException;
 
 /**
  * The AnnotationDriver reads the mapping metadata from docblock annotations.

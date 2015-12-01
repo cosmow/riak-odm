@@ -22,14 +22,14 @@ namespace Doctrine\ODM\Riak\Proxy;
 use Doctrine\Common\NotifyPropertyChanged;
 use Doctrine\Common\Proxy\AbstractProxyFactory;
 use Doctrine\Common\Proxy\ProxyDefinition;
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\DocumentNotFoundException;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\DocumentNotFoundException;
 use Doctrine\Common\Proxy\ProxyGenerator;
 use Doctrine\Common\Util\ClassUtils;
 use Doctrine\Common\Proxy\Proxy as BaseProxy;
 use Doctrine\Common\Persistence\Mapping\ClassMetadata as BaseClassMetadata;
-use Doctrine\ODM\Riak\Persisters\DocumentPersister;
+use CosmoW\ODM\Riak\Persisters\DocumentPersister;
 use ReflectionProperty;
 
 /**

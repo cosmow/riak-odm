@@ -22,12 +22,12 @@ namespace Doctrine\ODM\Riak;
 use Doctrine\Common\EventManager;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Riak\Connection;
-use Doctrine\ODM\Riak\Mapping\ClassMetadataInfo;
-use Doctrine\ODM\Riak\Mapping\MappingException;
-use Doctrine\ODM\Riak\Hydrator\HydratorFactory;
-use Doctrine\ODM\Riak\Proxy\ProxyFactory;
-use Doctrine\ODM\Riak\Query\FilterCollection;
-use Doctrine\ODM\Riak\Repository\RepositoryFactory;
+use CosmoW\ODM\Riak\Mapping\ClassMetadataInfo;
+use CosmoW\ODM\Riak\Mapping\MappingException;
+use CosmoW\ODM\Riak\Hydrator\HydratorFactory;
+use CosmoW\ODM\Riak\Proxy\ProxyFactory;
+use CosmoW\ODM\Riak\Query\FilterCollection;
+use CosmoW\ODM\Riak\Repository\RepositoryFactory;
 
 /**
  * The DocumentManager class is the central access point for managing the

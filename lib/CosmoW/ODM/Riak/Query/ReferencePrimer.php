@@ -19,11 +19,11 @@
 
 namespace Doctrine\ODM\Riak\Query;
 
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\PersistentCollection;
-use Doctrine\ODM\Riak\Proxy\Proxy;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\UnitOfWork;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\PersistentCollection;
+use CosmoW\ODM\Riak\Proxy\Proxy;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\UnitOfWork;
 
 /**
  * The ReferencePrimer is responsible for priming reference relationships.

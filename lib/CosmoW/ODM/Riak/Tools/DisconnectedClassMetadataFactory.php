@@ -19,8 +19,8 @@
 
 namespace Doctrine\ODM\Riak\Tools;
 
-use Doctrine\ODM\Riak\Mapping\ClassMetadataFactory;
-use Doctrine\ODM\Riak\Mapping\ClassMetadataInfo;
+use CosmoW\ODM\Riak\Mapping\ClassMetadataFactory;
+use CosmoW\ODM\Riak\Mapping\ClassMetadataInfo;
 
 /**
  * The DisconnectedClassMetadataFactory is used to create ClassMetadata objects

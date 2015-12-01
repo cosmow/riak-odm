@@ -20,8 +20,8 @@
 namespace Doctrine\ODM\Riak\Tools;
 
 use Doctrine\Common\Inflector\Inflector;
-use Doctrine\ODM\Riak\Mapping\ClassMetadataInfo;
-use Doctrine\ODM\Riak\Types\Type;
+use CosmoW\ODM\Riak\Mapping\ClassMetadataInfo;
+use CosmoW\ODM\Riak\Types\Type;
 
 /**
  * Generic class used to generate PHP5 document classes from ClassMetadataInfo instances

@@ -19,7 +19,7 @@
 
 namespace Doctrine\ODM\Riak\Tools\Console\Command\Schema;
 
-use Doctrine\ODM\Riak\SchemaManager;
+use CosmoW\ODM\Riak\SchemaManager;
 use Symfony\Component\Console\Command\Command;
 
 /**

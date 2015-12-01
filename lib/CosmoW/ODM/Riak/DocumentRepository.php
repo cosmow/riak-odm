@@ -23,8 +23,8 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\Common\Collections\Selectable;
 use Doctrine\Common\Persistence\ObjectRepository;
-use Doctrine\ODM\Riak\Mapping\MappingException;
-use Doctrine\ODM\Riak\Query\QueryExpressionVisitor;
+use CosmoW\ODM\Riak\Mapping\MappingException;
+use CosmoW\ODM\Riak\Query\QueryExpressionVisitor;
 
 /**
  * A DocumentRepository serves as a repository for documents with generic as well as

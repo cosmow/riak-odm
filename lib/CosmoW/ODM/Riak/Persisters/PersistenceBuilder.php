@@ -18,12 +18,12 @@
  */
 namespace Doctrine\ODM\Riak\Persisters;
 
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\PersistentCollection;
-use Doctrine\ODM\Riak\Types\Type;
-use Doctrine\ODM\Riak\UnitOfWork;
-use Doctrine\ODM\Riak\Utility\CollectionHelper;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\PersistentCollection;
+use CosmoW\ODM\Riak\Types\Type;
+use CosmoW\ODM\Riak\UnitOfWork;
+use CosmoW\ODM\Riak\Utility\CollectionHelper;
 
 /**
  * PersistenceBuilder builds the queries used by the persisters to update and insert

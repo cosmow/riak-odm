@@ -19,7 +19,7 @@
 
 namespace Doctrine\ODM\Riak\Hydrator;
 
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
 
 /**
  * The HydratorInterface defines methods all hydrator need to implement

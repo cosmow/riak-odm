@@ -25,15 +25,15 @@ use Doctrine\Common\EventManager;
 use Doctrine\Common\NotifyPropertyChanged;
 use Doctrine\Common\PropertyChangedListener;
 use Doctrine\Riak\GridFSFile;
-use Doctrine\ODM\Riak\Event\LifecycleEventArgs;
-use Doctrine\ODM\Riak\Hydrator\HydratorFactory;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\PersistentCollection;
-use Doctrine\ODM\Riak\Persisters\PersistenceBuilder;
-use Doctrine\ODM\Riak\Proxy\Proxy;
-use Doctrine\ODM\Riak\Query\Query;
-use Doctrine\ODM\Riak\Types\Type;
-use Doctrine\ODM\Riak\Utility\CollectionHelper;
+use CosmoW\ODM\Riak\Event\LifecycleEventArgs;
+use CosmoW\ODM\Riak\Hydrator\HydratorFactory;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\PersistentCollection;
+use CosmoW\ODM\Riak\Persisters\PersistenceBuilder;
+use CosmoW\ODM\Riak\Proxy\Proxy;
+use CosmoW\ODM\Riak\Query\Query;
+use CosmoW\ODM\Riak\Types\Type;
+use CosmoW\ODM\Riak\Utility\CollectionHelper;
 
 /**
  * The UnitOfWork is responsible for tracking changes to objects during an

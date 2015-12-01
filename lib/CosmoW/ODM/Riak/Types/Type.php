@@ -19,7 +19,7 @@
 
 namespace Doctrine\ODM\Riak\Types;
 
-use Doctrine\ODM\Riak\Mapping\MappingException;
+use CosmoW\ODM\Riak\Mapping\MappingException;
 
 /**
  * The Type interface.

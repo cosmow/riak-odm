@@ -21,19 +21,19 @@ namespace Doctrine\ODM\Riak\Persisters;
 
 use Doctrine\Common\EventManager;
 use Doctrine\Riak\CursorInterface;
-use Doctrine\ODM\Riak\Cursor;
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\Utility\CollectionHelper;
-use Doctrine\ODM\Riak\Hydrator\HydratorFactory;
-use Doctrine\ODM\Riak\LockException;
-use Doctrine\ODM\Riak\LockMode;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
-use Doctrine\ODM\Riak\PersistentCollection;
-use Doctrine\ODM\Riak\Proxy\Proxy;
-use Doctrine\ODM\Riak\Query\CriteriaMerger;
-use Doctrine\ODM\Riak\Query\Query;
-use Doctrine\ODM\Riak\Types\Type;
-use Doctrine\ODM\Riak\UnitOfWork;
+use CosmoW\ODM\Riak\Cursor;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\Utility\CollectionHelper;
+use CosmoW\ODM\Riak\Hydrator\HydratorFactory;
+use CosmoW\ODM\Riak\LockException;
+use CosmoW\ODM\Riak\LockMode;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\PersistentCollection;
+use CosmoW\ODM\Riak\Proxy\Proxy;
+use CosmoW\ODM\Riak\Query\CriteriaMerger;
+use CosmoW\ODM\Riak\Query\Query;
+use CosmoW\ODM\Riak\Types\Type;
+use CosmoW\ODM\Riak\UnitOfWork;
 
 /**
  * The DocumentPersister is responsible for persisting documents.

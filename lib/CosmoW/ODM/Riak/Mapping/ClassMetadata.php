@@ -20,7 +20,7 @@
 namespace Doctrine\ODM\Riak\Mapping;
 
 use Doctrine\Instantiator\Instantiator;
-use Doctrine\ODM\Riak\LockException;
+use CosmoW\ODM\Riak\LockException;
 
 /**
  * A <tt>ClassMetadata</tt> instance holds all the object-document mapping metadata

@@ -19,11 +19,11 @@
 
 namespace Doctrine\ODM\Riak\Mapping;
 
-use Doctrine\ODM\Riak\Utility\CollectionHelper;
-use Doctrine\ODM\Riak\LockException;
-use Doctrine\ODM\Riak\Mapping\MappingException;
-use Doctrine\ODM\Riak\Proxy\Proxy;
-use Doctrine\ODM\Riak\Types\Type;
+use CosmoW\ODM\Riak\Utility\CollectionHelper;
+use CosmoW\ODM\Riak\LockException;
+use CosmoW\ODM\Riak\Mapping\MappingException;
+use CosmoW\ODM\Riak\Proxy\Proxy;
+use CosmoW\ODM\Riak\Types\Type;
 use InvalidArgumentException;
 
 /**

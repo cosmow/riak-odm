@@ -19,11 +19,11 @@
 
 namespace Doctrine\ODM\Riak\Query;
 
-use Doctrine\ODM\Riak\DocumentManager;
-use Doctrine\ODM\Riak\Hydrator;
-use Doctrine\ODM\Riak\Mapping\ClassMetadataInfo;
-use Doctrine\ODM\Riak\Query\Expr;
-use Doctrine\ODM\Riak\UnitOfWork;
+use CosmoW\ODM\Riak\DocumentManager;
+use CosmoW\ODM\Riak\Hydrator;
+use CosmoW\ODM\Riak\Mapping\ClassMetadataInfo;
+use CosmoW\ODM\Riak\Query\Expr;
+use CosmoW\ODM\Riak\UnitOfWork;
 
 /**
  * Query builder for ODM.

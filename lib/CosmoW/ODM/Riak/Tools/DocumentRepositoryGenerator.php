@@ -35,7 +35,7 @@ class DocumentRepositoryGenerator
 
 namespace <namespace>;
 
-use Doctrine\ODM\Riak\DocumentRepository;
+use CosmoW\ODM\Riak\DocumentRepository;
 
 /**
  * <className>

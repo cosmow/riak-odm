@@ -2,8 +2,8 @@
 
 namespace Doctrine\ODM\Riak\Tools;
 
-use Doctrine\ODM\Riak\Event\LoadClassMetadataEventArgs;
-use Doctrine\ODM\Riak\Mapping\ClassMetadata;
+use CosmoW\ODM\Riak\Event\LoadClassMetadataEventArgs;
+use CosmoW\ODM\Riak\Mapping\ClassMetadata;
 
 /**
  * ResolveTargetDocumentListener
