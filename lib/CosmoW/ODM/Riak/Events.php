@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak;
+namespace CosmoW\ODM\Riak;
 
 /**
  * Container for all ODM events.

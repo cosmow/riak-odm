@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Types;
+namespace CosmoW\ODM\Riak\Types;
 
 /**
  * The BinData type for binary UUID data, which follows RFC 4122.

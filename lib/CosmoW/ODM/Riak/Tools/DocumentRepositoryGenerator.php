@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Tools;
+namespace CosmoW\ODM\Riak\Tools;
 
 /**
  * Class to generate document repository classes

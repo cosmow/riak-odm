@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Hydrator;
+namespace CosmoW\ODM\Riak\Hydrator;
 
 use Doctrine\Common\EventManager;
 use CosmoW\ODM\Riak\DocumentManager;

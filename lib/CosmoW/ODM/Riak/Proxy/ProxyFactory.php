@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Proxy;
+namespace CosmoW\ODM\Riak\Proxy;
 
 use Doctrine\Common\NotifyPropertyChanged;
 use Doctrine\Common\Proxy\AbstractProxyFactory;

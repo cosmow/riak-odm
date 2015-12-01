@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Mapping\Driver;
+namespace CosmoW\ODM\Riak\Mapping\Driver;
 
 use Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator;
 

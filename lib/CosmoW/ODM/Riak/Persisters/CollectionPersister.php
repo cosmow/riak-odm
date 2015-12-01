@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Persisters;
+namespace CosmoW\ODM\Riak\Persisters;
 
 use CosmoW\ODM\Riak\DocumentManager;
 use CosmoW\ODM\Riak\LockException;

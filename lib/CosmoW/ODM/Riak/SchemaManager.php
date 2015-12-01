@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak;
+namespace CosmoW\ODM\Riak;
 
 use CosmoW\ODM\Riak\Mapping\ClassMetadata;
 use CosmoW\ODM\Riak\Mapping\ClassMetadataFactory;

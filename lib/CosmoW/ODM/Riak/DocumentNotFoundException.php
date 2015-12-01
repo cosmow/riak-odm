@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak;
+namespace CosmoW\ODM\Riak;
 
 /**
  * Class for exception when encountering proxy object that has

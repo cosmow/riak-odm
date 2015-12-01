@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Id;
+namespace CosmoW\ODM\Riak\Id;
 
 use CosmoW\ODM\Riak\DocumentManager;
 use CosmoW\ODM\Riak\Mapping\ClassMetadata;

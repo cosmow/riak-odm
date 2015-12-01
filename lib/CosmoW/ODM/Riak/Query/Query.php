@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Query;
+namespace CosmoW\ODM\Riak\Query;
 
 use Doctrine\Riak\Collection;
 use Doctrine\Riak\Cursor as BaseCursor;

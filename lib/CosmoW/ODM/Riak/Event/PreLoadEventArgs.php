@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Event;
+namespace CosmoW\ODM\Riak\Event;
 
 use CosmoW\ODM\Riak\DocumentManager;
 

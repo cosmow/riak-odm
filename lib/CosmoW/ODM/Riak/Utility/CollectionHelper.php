@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Utility;
+namespace CosmoW\ODM\Riak\Utility;
 
 /**
  * Utility class used to unify checks on how collection strategies should behave.

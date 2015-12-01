@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Types;
+namespace CosmoW\ODM\Riak\Types;
 
 /**
  * The File type.

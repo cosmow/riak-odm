@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Hydrator;
+namespace CosmoW\ODM\Riak\Hydrator;
 
 use CosmoW\ODM\Riak\Mapping\ClassMetadata;
 

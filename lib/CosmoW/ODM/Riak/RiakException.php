@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak;
+namespace CosmoW\ODM\Riak;
 
 /**
  * Class for all exceptions related to the Doctrine Riak ODM

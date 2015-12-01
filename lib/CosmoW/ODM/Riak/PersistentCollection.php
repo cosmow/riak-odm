@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak;
+namespace CosmoW\ODM\Riak;
 
 use Doctrine\Common\Collections\Collection as BaseCollection;
 use CosmoW\ODM\Riak\Mapping\ClassMetadata;

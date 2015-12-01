@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Tools\Console\Command\ClearCache;
+namespace CosmoW\ODM\Riak\Tools\Console\Command\ClearCache;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

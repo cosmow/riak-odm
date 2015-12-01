@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Mapping\Annotations;
+namespace CosmoW\ODM\Riak\Mapping\Annotations;
 
 /** @Annotation */
 final class String extends AbstractField
