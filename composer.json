@@ -1,0 +1,36 @@
+{
+    "name": "cosmow/riak-odm",
+    "type": "library",
+    "description": "Doctrine Riak Object Document Mapper",
+    "keywords": ["odm", "database", "persistence", "riak"],
+    "homepage": "http://www.doctrine-project.org",
+    "license": "MIT",
+    "authors": [
+        { "name": "ckmm" },
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/console": "~2.3|~3.0",
+        "doctrine/annotations": "~1.0",
+        "doctrine/collections": "~1.1",
+        "doctrine/common": "~2.4",
+        "doctrine/cache": "~1.0",
+        "doctrine/inflector": "~1.0",
+        "doctrine/instantiator": "~1.0.1",
+        "cosmow/riak": "dev-master"
+    },
+    "require-dev": {
+        "symfony/yaml": "~2.3|~3.0"
+    },
+    "suggest": {
+        "symfony/yaml": "Enables the YAML metadata mapping driver"
+    },
+    "autoload": {
+        "psr-0": { "Doctrine\\ODM\\Riak": "lib/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
