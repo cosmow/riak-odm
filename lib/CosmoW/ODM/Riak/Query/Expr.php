@@ -28,7 +28,7 @@ use CosmoW\ODM\Riak\Mapping\ClassMetadata;
  * @since       1.0
  * @author      Jonathan H. Wage <jonwage@gmail.com>
  */
-class Expr extends \Doctrine\Riak\Query\Expr
+class Expr extends \CosmoW\Riak\Query\Expr
 {
     /**
      * The DocumentManager instance for this query
