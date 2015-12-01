@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Mapping;
+namespace CosmoW\ODM\Riak\Mapping;
 
 use Doctrine\Common\Persistence\Mapping\MappingException as BaseMappingException;
 

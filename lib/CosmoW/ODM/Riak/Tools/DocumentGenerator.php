@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Tools;
+namespace CosmoW\ODM\Riak\Tools;
 
 use Doctrine\Common\Inflector\Inflector;
 use CosmoW\ODM\Riak\Mapping\ClassMetadataInfo;

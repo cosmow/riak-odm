@@ -1,6 +1,6 @@
 <?php
 
-namespace Doctrine\ODM\Riak\Repository;
+namespace CosmoW\ODM\Riak\Repository;
 
 use CosmoW\ODM\Riak\DocumentManager;
 

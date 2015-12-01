@@ -1,6 +1,6 @@
 <?php
 
-namespace Doctrine\ODM\Riak\Tools;
+namespace CosmoW\ODM\Riak\Tools;
 
 use CosmoW\ODM\Riak\Event\LoadClassMetadataEventArgs;
 use CosmoW\ODM\Riak\Mapping\ClassMetadata;

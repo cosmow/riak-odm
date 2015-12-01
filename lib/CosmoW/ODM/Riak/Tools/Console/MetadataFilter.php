@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Tools\Console;
+namespace CosmoW\ODM\Riak\Tools\Console;
 
 /**
  * Used by CLI Tools to restrict entity-based commands to given patterns.

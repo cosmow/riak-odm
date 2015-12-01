@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Tools\Console\Helper;
+namespace CosmoW\ODM\Riak\Tools\Console\Helper;
 
 use CosmoW\ODM\Riak\DocumentManager;
 use Symfony\Component\Console\Helper\Helper;

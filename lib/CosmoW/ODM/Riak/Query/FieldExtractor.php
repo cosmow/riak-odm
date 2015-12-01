@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Query;
+namespace CosmoW\ODM\Riak\Query;
 
 /**
  * Class responsible for extracting an array of field names that are involved in

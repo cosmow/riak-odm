@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Mapping;
+namespace CosmoW\ODM\Riak\Mapping;
 
 use Doctrine\Instantiator\Instantiator;
 use CosmoW\ODM\Riak\LockException;

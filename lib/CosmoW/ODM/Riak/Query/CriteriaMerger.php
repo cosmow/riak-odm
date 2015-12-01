@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Query;
+namespace CosmoW\ODM\Riak\Query;
 
 /**
  * Utility class for merging query criteria.

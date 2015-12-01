@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Doctrine\ODM\Riak\Tools\Console\Command\Schema;
+namespace CosmoW\ODM\Riak\Tools\Console\Command\Schema;
 
 use CosmoW\ODM\Riak\SchemaManager;
 use Symfony\Component\Console\Command\Command;
