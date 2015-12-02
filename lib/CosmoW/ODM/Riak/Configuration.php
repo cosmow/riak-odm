@@ -356,7 +356,7 @@ class Configuration extends \CosmoW\Riak\Configuration
     public function getClassMetadataFactoryName()
     {
         if ( ! isset($this->attributes['classMetadataFactoryName'])) {
-            $this->attributes['classMetadataFactoryName'] = 'Doctrine\ODM\Riak\Mapping\ClassMetadataFactory';
+            $this->attributes['classMetadataFactoryName'] = 'CosmoW\ODM\Riak\Mapping\ClassMetadataFactory';
         }
         return $this->attributes['classMetadataFactoryName'];
     }
@@ -461,7 +461,7 @@ class Configuration extends \CosmoW\Riak\Configuration
     {
         return isset($this->attributes['defaultRepositoryClassName'])
             ? $this->attributes['defaultRepositoryClassName']
-            : 'Doctrine\ODM\Riak\DocumentRepository';
+            : 'CosmoW\ODM\Riak\DocumentRepository';
     }
 
     /**
