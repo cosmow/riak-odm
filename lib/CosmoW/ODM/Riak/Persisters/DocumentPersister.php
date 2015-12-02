@@ -20,7 +20,7 @@
 namespace CosmoW\ODM\Riak\Persisters;
 
 use Doctrine\Common\EventManager;
-use Doctrine\Riak\CursorInterface;
+use CosmoW\Riak\CursorInterface;
 use CosmoW\ODM\Riak\Cursor;
 use CosmoW\ODM\Riak\DocumentManager;
 use CosmoW\ODM\Riak\Utility\CollectionHelper;

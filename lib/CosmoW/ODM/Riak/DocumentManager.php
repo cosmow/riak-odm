@@ -21,7 +21,7 @@ namespace CosmoW\ODM\Riak;
 
 use Doctrine\Common\EventManager;
 use Doctrine\Common\Persistence\ObjectManager;
-use Doctrine\Riak\Connection;
+use CosmoW\Riak\Connection;
 use CosmoW\ODM\Riak\Mapping\ClassMetadataInfo;
 use CosmoW\ODM\Riak\Mapping\MappingException;
 use CosmoW\ODM\Riak\Hydrator\HydratorFactory;
@@ -45,23 +45,23 @@ use CosmoW\ODM\Riak\Repository\RepositoryFactory;
 class DocumentManager implements ObjectManager
 {
     /**
-     * The Doctrine Riak connection instance.
+     * The CosmoW Riak connection instance.
      *
-     * @var \Doctrine\Riak\Connection
+     * @var \CosmoW\Riak\Connection
      */
     private $connection;
 
     /**
      * The used Configuration.
      *
-     * @var \Doctrine\ODM\Riak\Configuration
+     * @var \CosmoW\ODM\Riak\Configuration
      */
     private $config;
 
     /**
      * The metadata factory, used to retrieve the ODM metadata of document classes.
      *
-     * @var \Doctrine\ODM\Riak\Mapping\ClassMetadataFactory
+     * @var \CosmoW\ODM\Riak\Mapping\ClassMetadataFactory
      */
     private $metadataFactory;
 
@@ -75,63 +75,7 @@ class DocumentManager implements ObjectManager
     /**
      * The event manager that is the central point of the event system.
      *
-     * @var \Doctrine\Common\EventManager
-     */
-    private $eventManager;
-
-    /**
-     * The Hydrator factory instance.
-     *
-     * @var HydratorFactory
-     */
-    private $hydratorFactory;
-
-    /**
-     * The Proxy factory instance.
-     *
-     * @var ProxyFactory
-     */
-    private $proxyFactory;
-
-    /**
-     * The repository factory used to create dynamic repositories.
-     *
-     * @var RepositoryFactory
-     */
-    private $repositoryFactory;
-
-    /**
-     * SchemaManager instance
-     *
-     * @var SchemaManager
-     */
-    private $schemaManager;
-
-    /**
-     * Array of cached document database instances that are lazily loaded.
-     *
-     * @var array
-     */
-    private $documentDatabases = array();
-
-    /**
-     * Array of cached document collection instances that are lazily loaded.
-     *
-     * @var array
-     */
-    private $documentCollections = array();
-
-    /**
-     * Whether the DocumentManager is closed or not.
-     *
-     * @var bool
-     */
-    private $closed = false;
-
-    /**
-     * Collection of query filters.
-     *
-     * @var \Doctrine\ODM\Riak\Query\FilterCollection
+     * @var \CosmoW\ODM\Riak\Query\FilterCollection
      */
     private $filterCollection;
 
@@ -139,7 +83,7 @@ class DocumentManager implements ObjectManager
      * Creates a new Document that operates on the given Mongo connection
      * and uses the given Configuration.
      *
-     * @param \Doctrine\Riak\Connection|null $conn
+     * @param \CosmoW\Riak\Connection|null $conn
      * @param Configuration|null $config
      * @param \Doctrine\Common\EventManager|null $eventManager
      */
@@ -193,7 +137,7 @@ class DocumentManager implements ObjectManager
      * and uses the given Configuration.
      *
      * @static
-     * @param \Doctrine\Riak\Connection|null $conn
+     * @param \CosmoW\Riak\Connection|null $conn
      * @param Configuration|null $config
      * @param \Doctrine\Common\EventManager|null $eventManager
      * @return DocumentManager
@@ -216,7 +160,7 @@ class DocumentManager implements ObjectManager
     /**
      * Gets the PHP Mongo instance that this DocumentManager wraps.
      *
-     * @return \Doctrine\Riak\Connection
+     * @return \CosmoW\Riak\Connection
      */
     public function getConnection()
     {
@@ -292,7 +236,7 @@ class DocumentManager implements ObjectManager
      * Returns the Riak instance for a class.
      *
      * @param string $className The class name.
-     * @return \Doctrine\Riak\Database
+     * @return \CosmoW\Riak\Database
      */
     public function getDocumentDatabase($className)
     {
@@ -326,7 +270,7 @@ class DocumentManager implements ObjectManager
      *
      * @param string $className The class name.
      * @throws RiakException When the $className param is not mapped to a collection
-     * @return \Doctrine\Riak\Collection
+     * @return \CosmoW\Riak\Collection
      */
     public function getDocumentCollection($className)
     {

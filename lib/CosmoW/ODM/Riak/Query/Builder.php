@@ -43,7 +43,7 @@ class Builder extends \CosmoW\Riak\Query\Builder
     /**
      * The ClassMetadata instance.
      *
-     * @var \Doctrine\ODM\Riak\Mapping\ClassMetadata
+     * @var \CosmoW\ODM\Riak\Mapping\ClassMetadata
      */
     private $class;
 
