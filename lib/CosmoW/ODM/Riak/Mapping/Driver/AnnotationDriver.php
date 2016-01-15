@@ -39,9 +39,9 @@ use CosmoW\ODM\Riak\Mapping\MappingException;
 class AnnotationDriver extends AbstractAnnotationDriver
 {
     protected $entityAnnotationClasses = array(
-        'Doctrine\\ODM\\Riak\\Mapping\\Annotations\\Document' => 1,
-        'Doctrine\\ODM\\Riak\\Mapping\\Annotations\\MappedSuperclass' => 2,
-        'Doctrine\\ODM\\Riak\\Mapping\\Annotations\\EmbeddedDocument' => 3,
+        'CosmoW\\ODM\\Riak\\Mapping\\Annotations\\Document' => 1,
+        'CosmoW\\ODM\\Riak\\Mapping\\Annotations\\MappedSuperclass' => 2,
+        'CosmoW\\ODM\\Riak\\Mapping\\Annotations\\EmbeddedDocument' => 3,
     );
 
     /**
@@ -255,3 +255,4 @@ class AnnotationDriver extends AbstractAnnotationDriver
         return new self($reader, $paths);
     }
 }
+
