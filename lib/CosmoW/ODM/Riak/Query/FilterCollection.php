@@ -33,14 +33,14 @@ class FilterCollection
     /**
      * The used Configuration.
      *
-     * @var \Doctrine\ODM\Riak\Configuration
+     * @var \CosmoW\ODM\Riak\Configuration
      */
     private $config;
 
     /**
      * The DocumentManager that "owns" this FilterCollection instance.
      *
-     * @var \Doctrine\ODM\Riak\DocumentManager
+     * @var \CosmoW\ODM\Riak\DocumentManager
      */
     private $dm;
 
@@ -82,7 +82,7 @@ class FilterCollection
      *
      * @throws \InvalidArgumentException If the filter does not exist.
      *
-     * @return \Doctrine\ODM\Riak\Query\Filter\BsonFilter The enabled filter.
+     * @return \CosmoW\ODM\Riak\Query\Filter\BsonFilter The enabled filter.
      */
     public function enable($name)
     {
@@ -110,7 +110,7 @@ class FilterCollection
      *
      * @param string $name Name of the filter.
      *
-     * @return \Doctrine\ODM\Riak\Query\Filter\BsonFilter The disabled filter.
+     * @return \CosmoW\ODM\Riak\Query\Filter\BsonFilter The disabled filter.
      *
      * @throws \InvalidArgumentException If the filter does not exist.
      */
@@ -129,7 +129,7 @@ class FilterCollection
      *
      * @param string $name Name of the filter.
      *
-     * @return \Doctrine\ODM\Riak\Query\Filter\BsonFilter The filter.
+     * @return \CosmoW\ODM\Riak\Query\Filter\BsonFilter The filter.
      *
      * @throws \InvalidArgumentException If the filter is not enabled.
      */

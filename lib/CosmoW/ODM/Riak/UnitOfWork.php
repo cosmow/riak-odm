@@ -329,7 +329,7 @@ class UnitOfWork implements PropertyChangedListener
     /**
      * Get the collection persister instance.
      *
-     * @return \Doctrine\ODM\Riak\Persisters\CollectionPersister
+     * @return \CosmoW\ODM\Riak\Persisters\CollectionPersister
      */
     public function getCollectionPersister()
     {
@@ -660,7 +660,7 @@ class UnitOfWork implements PropertyChangedListener
     /**
      * Used to do the common work of computeChangeSet and recomputeSingleDocumentChangeSet
      *
-     * @param \Doctrine\ODM\Riak\Mapping\ClassMetadata $class
+     * @param \CosmoW\ODM\Riak\Mapping\ClassMetadata $class
      * @param object $document
      * @param boolean $recompute
      */
@@ -2051,7 +2051,7 @@ class UnitOfWork implements PropertyChangedListener
                         } elseif ( ! $assoc2['isCascadeMerge']) {
                             if ($this->getDocumentState($other) === self::STATE_DETACHED) {
                                 $targetDocument = isset($assoc2['targetDocument']) ? $assoc2['targetDocument'] : get_class($other);
-                                /* @var $targetClass \Doctrine\ODM\Riak\Mapping\ClassMetadataInfo */
+                                /* @var $targetClass \CosmoW\ODM\Riak\Mapping\ClassMetadataInfo */
                                 $targetClass = $this->dm->getClassMetadata($targetDocument);
                                 $relatedId = $targetClass->getIdentifierObject($other);
 
@@ -2592,7 +2592,7 @@ class UnitOfWork implements PropertyChangedListener
      * INTERNAL:
      * Unschedules a collection from being deleted when this UnitOfWork commits.
      *
-     * @param \Doctrine\ODM\Riak\PersistentCollection $coll
+     * @param \CosmoW\ODM\Riak\PersistentCollection $coll
      */
     public function unscheduleCollectionDeletion(PersistentCollection $coll)
     {
@@ -2630,7 +2630,7 @@ class UnitOfWork implements PropertyChangedListener
      * INTERNAL:
      * Unschedules a collection from being updated when this UnitOfWork commits.
      *
-     * @param \Doctrine\ODM\Riak\PersistentCollection $coll
+     * @param \CosmoW\ODM\Riak\PersistentCollection $coll
      */
     public function unscheduleCollectionUpdate(PersistentCollection $coll)
     {

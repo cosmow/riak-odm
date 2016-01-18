@@ -33,7 +33,7 @@ abstract class AbstractIdGenerator
     /**
      * Generates an identifier for a document.
      *
-     * @param \Doctrine\ODM\Riak\DocumentManager $dm
+     * @param \CosmoW\ODM\Riak\DocumentManager $dm
      * @param object $document
      * @return mixed
      */

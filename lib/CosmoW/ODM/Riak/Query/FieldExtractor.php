@@ -23,7 +23,7 @@ namespace CosmoW\ODM\Riak\Query;
  * Class responsible for extracting an array of field names that are involved in
  * a given riak query. Used for checking if query is indexed.
  *
- * @see Doctrine\ODM\Riak\Query::isIndexed()
+ * @see CosmoW\ODM\Riak\Query::isIndexed()
  */
 class FieldExtractor
 {

@@ -80,7 +80,7 @@ class YamlDriver extends FileDriver
             }
         }
         if (isset($element['inheritanceType'])) {
-            $class->setInheritanceType(constant('Doctrine\ODM\Riak\Mapping\ClassMetadata::INHERITANCE_TYPE_' . strtoupper($element['inheritanceType'])));
+            $class->setInheritanceType(constant('CosmoW\ODM\Riak\Mapping\ClassMetadata::INHERITANCE_TYPE_' . strtoupper($element['inheritanceType'])));
         }
         if (isset($element['discriminatorField'])) {
             $class->setDiscriminatorField($this->parseDiscriminatorField($element['discriminatorField']));
@@ -92,7 +92,7 @@ class YamlDriver extends FileDriver
             $class->setDefaultDiscriminatorValue($element['defaultDiscriminatorValue']);
         }
         if (isset($element['changeTrackingPolicy'])) {
-            $class->setChangeTrackingPolicy(constant('Doctrine\ODM\Riak\Mapping\ClassMetadata::CHANGETRACKING_'
+            $class->setChangeTrackingPolicy(constant('CosmoW\ODM\Riak\Mapping\ClassMetadata::CHANGETRACKING_'
                     . strtoupper($element['changeTrackingPolicy'])));
         }
         if (isset($element['requireIndexes'])) {
@@ -143,7 +143,7 @@ class YamlDriver extends FileDriver
         if (isset($element['lifecycleCallbacks'])) {
             foreach ($element['lifecycleCallbacks'] as $type => $methods) {
                 foreach ($methods as $method) {
-                    $class->addLifecycleCallback($method, constant('Doctrine\ODM\Riak\Events::' . $type));
+                    $class->addLifecycleCallback($method, constant('CosmoW\ODM\Riak\Events::' . $type));
                 }
             }
         }

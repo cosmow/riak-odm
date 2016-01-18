@@ -354,7 +354,7 @@ class DocumentPersister
      *
      * @param object $document
      * @param array $options Array of options to be used with update()
-     * @throws \Doctrine\ODM\Riak\LockException
+     * @throws \CosmoW\ODM\Riak\LockException
      */
     public function update($document, array $options = array())
     {
@@ -411,7 +411,7 @@ class DocumentPersister
      *
      * @param mixed $document
      * @param array $options Array of options to be used with remove()
-     * @throws \Doctrine\ODM\Riak\LockException
+     * @throws \CosmoW\ODM\Riak\LockException
      */
     public function delete($document, array $options = array())
     {
@@ -454,7 +454,7 @@ class DocumentPersister
      * @param array   $hints    Hints for document creation
      * @param integer $lockMode
      * @param array   $sort     Sort array for Cursor::sort()
-     * @throws \Doctrine\ODM\Riak\LockException
+     * @throws \CosmoW\ODM\Riak\LockException
      * @return object|null The loaded and managed document instance or null if no document was found
      * @todo Check identity map? loadById method? Try to guess whether $criteria is the id?
      */
@@ -931,7 +931,7 @@ class DocumentPersister
             list($key, $value) = $this->prepareQueryElement($key, $value, null, true);
 
             $preparedQuery[$key] = is_array($value)
-                ? array_map('Doctrine\ODM\Riak\Types\Type::convertPHPToDatabaseValue', $value)
+                ? array_map('CosmoW\ODM\Riak\Types\Type::convertPHPToDatabaseValue', $value)
                 : Type::convertPHPToDatabaseValue($value);
         }
 

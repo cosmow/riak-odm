@@ -170,7 +170,7 @@ class DocumentManager implements ObjectManager
     /**
      * Gets the metadata factory used to gather the metadata of classes.
      *
-     * @return \Doctrine\ODM\Riak\Mapping\ClassMetadataFactory
+     * @return \CosmoW\ODM\Riak\Mapping\ClassMetadataFactory
      */
     public function getMetadataFactory()
     {
@@ -203,7 +203,7 @@ class DocumentManager implements ObjectManager
      * Gets the Hydrator factory used by the DocumentManager to generate and get hydrators
      * for each type of document.
      *
-     * @return \Doctrine\ODM\Riak\Hydrator\HydratorInterface
+     * @return \CosmoW\ODM\Riak\Hydrator\HydratorInterface
      */
     public function getHydratorFactory()
     {
@@ -213,7 +213,7 @@ class DocumentManager implements ObjectManager
     /**
      * Returns SchemaManager, used to create/drop indexes/collections/databases.
      *
-     * @return \Doctrine\ODM\Riak\SchemaManager
+     * @return \CosmoW\ODM\Riak\SchemaManager
      */
     public function getSchemaManager()
     {
@@ -224,7 +224,7 @@ class DocumentManager implements ObjectManager
      * Returns the metadata for a class.
      *
      * @param string $className The class name.
-     * @return \Doctrine\ODM\Riak\Mapping\ClassMetadata
+     * @return \CosmoW\ODM\Riak\Mapping\ClassMetadata
      * @internal Performance-sensitive method.
      */
     public function getClassMetadata($className)
@@ -486,7 +486,7 @@ class DocumentManager implements ObjectManager
      */
     public function getReference($documentName, $identifier)
     {
-        /* @var $class \Doctrine\ODM\Riak\Mapping\ClassMetadataInfo */
+        /* @var $class \CosmoW\ODM\Riak\Mapping\ClassMetadataInfo */
         $class = $this->metadataFactory->getMetadataFor(ltrim($documentName, '\\'));
 
         // Check identity map first, if its already in there just return it.
@@ -698,7 +698,7 @@ class DocumentManager implements ObjectManager
     /**
      * Gets the filter collection.
      *
-     * @return \Doctrine\ODM\Riak\Query\FilterCollection The active filter collection.
+     * @return \CosmoW\ODM\Riak\Query\FilterCollection The active filter collection.
      */
     public function getFilterCollection()
     {

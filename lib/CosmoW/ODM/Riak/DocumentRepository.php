@@ -55,7 +55,7 @@ class DocumentRepository implements ObjectRepository, Selectable
     protected $uow;
 
     /**
-     * @var \Doctrine\ODM\Riak\Mapping\ClassMetadata
+     * @var \CosmoW\ODM\Riak\Mapping\ClassMetadata
      */
     protected $class;
 

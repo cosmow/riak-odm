@@ -42,14 +42,14 @@ class HydratorFactory
     /**
      * The DocumentManager this factory is bound to.
      *
-     * @var \Doctrine\ODM\Riak\DocumentManager
+     * @var \CosmoW\ODM\Riak\DocumentManager
      */
     private $dm;
 
     /**
      * The UnitOfWork used to coordinate object-level transactions.
      *
-     * @var \Doctrine\ODM\Riak\UnitOfWork
+     * @var \CosmoW\ODM\Riak\UnitOfWork
      */
     private $unitOfWork;
 
@@ -125,7 +125,7 @@ class HydratorFactory
      * Gets the hydrator object for the given document class.
      *
      * @param string $className
-     * @return \Doctrine\ODM\Riak\Hydrator\HydratorInterface $hydrator
+     * @return \CosmoW\ODM\Riak\Hydrator\HydratorInterface $hydrator
      */
     public function getHydratorFor($className)
     {
@@ -313,7 +313,7 @@ EOF
 
         /** @Many */
         \$mongoData = isset(\$data['%1\$s']) ? \$data['%1\$s'] : null;
-        \$return = new \Doctrine\ODM\Riak\PersistentCollection(new \Doctrine\Common\Collections\ArrayCollection(), \$this->dm, \$this->unitOfWork);
+        \$return = new \CosmoW\ODM\Riak\PersistentCollection(new \Doctrine\Common\Collections\ArrayCollection(), \$this->dm, \$this->unitOfWork);
         \$return->setHints(\$hints);
         \$return->setOwner(\$document, \$this->class->fieldMappings['%2\$s']);
         \$return->setInitialized(false);

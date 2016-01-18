@@ -61,31 +61,31 @@ abstract class Type
 
     /** The map of supported doctrine mapping types. */
     private static $typesMap = array(
-        self::ID => 'Doctrine\ODM\Riak\Types\IdType',
-        self::INTID => 'Doctrine\ODM\Riak\Types\IntIdType',
-        self::CUSTOMID => 'Doctrine\ODM\Riak\Types\CustomIdType',
-        self::BOOL => 'Doctrine\ODM\Riak\Types\BooleanType',
-        self::BOOLEAN => 'Doctrine\ODM\Riak\Types\BooleanType',
-        self::INT => 'Doctrine\ODM\Riak\Types\IntType',
-        self::INTEGER => 'Doctrine\ODM\Riak\Types\IntType',
-        self::FLOAT => 'Doctrine\ODM\Riak\Types\FloatType',
-        self::STRING => 'Doctrine\ODM\Riak\Types\StringType',
-        self::DATE => 'Doctrine\ODM\Riak\Types\DateType',
-        self::KEY => 'Doctrine\ODM\Riak\Types\KeyType',
-        self::TIMESTAMP => 'Doctrine\ODM\Riak\Types\TimestampType',
-        self::BINDATA => 'Doctrine\ODM\Riak\Types\BinDataType',
-        self::BINDATAFUNC => 'Doctrine\ODM\Riak\Types\BinDataFuncType',
-        self::BINDATABYTEARRAY => 'Doctrine\ODM\Riak\Types\BinDataByteArrayType',
-        self::BINDATAUUID => 'Doctrine\ODM\Riak\Types\BinDataUUIDType',
-        self::BINDATAUUIDRFC4122 => 'Doctrine\ODM\Riak\Types\BinDataUUIDRFC4122Type',
-        self::BINDATAMD5 => 'Doctrine\ODM\Riak\Types\BinDataMD5Type',
-        self::BINDATACUSTOM => 'Doctrine\ODM\Riak\Types\BinDataCustomType',
-        self::FILE => 'Doctrine\ODM\Riak\Types\FileType',
-        self::HASH => 'Doctrine\ODM\Riak\Types\HashType',
-        self::COLLECTION => 'Doctrine\ODM\Riak\Types\CollectionType',
-        self::INCREMENT => 'Doctrine\ODM\Riak\Types\IncrementType',
-        self::OBJECTID => 'Doctrine\ODM\Riak\Types\ObjectIdType',
-        self::RAW => 'Doctrine\ODM\Riak\Types\RawType',
+        self::ID => 'CosmoW\ODM\Riak\Types\IdType',
+        self::INTID => 'CosmoW\ODM\Riak\Types\IntIdType',
+        self::CUSTOMID => 'CosmoW\ODM\Riak\Types\CustomIdType',
+        self::BOOL => 'CosmoW\ODM\Riak\Types\BooleanType',
+        self::BOOLEAN => 'CosmoW\ODM\Riak\Types\BooleanType',
+        self::INT => 'CosmoW\ODM\Riak\Types\IntType',
+        self::INTEGER => 'CosmoW\ODM\Riak\Types\IntType',
+        self::FLOAT => 'CosmoW\ODM\Riak\Types\FloatType',
+        self::STRING => 'CosmoW\ODM\Riak\Types\StringType',
+        self::DATE => 'CosmoW\ODM\Riak\Types\DateType',
+        self::KEY => 'CosmoW\ODM\Riak\Types\KeyType',
+        self::TIMESTAMP => 'CosmoW\ODM\Riak\Types\TimestampType',
+        self::BINDATA => 'CosmoW\ODM\Riak\Types\BinDataType',
+        self::BINDATAFUNC => 'CosmoW\ODM\Riak\Types\BinDataFuncType',
+        self::BINDATABYTEARRAY => 'CosmoW\ODM\Riak\Types\BinDataByteArrayType',
+        self::BINDATAUUID => 'CosmoW\ODM\Riak\Types\BinDataUUIDType',
+        self::BINDATAUUIDRFC4122 => 'CosmoW\ODM\Riak\Types\BinDataUUIDRFC4122Type',
+        self::BINDATAMD5 => 'CosmoW\ODM\Riak\Types\BinDataMD5Type',
+        self::BINDATACUSTOM => 'CosmoW\ODM\Riak\Types\BinDataCustomType',
+        self::FILE => 'CosmoW\ODM\Riak\Types\FileType',
+        self::HASH => 'CosmoW\ODM\Riak\Types\HashType',
+        self::COLLECTION => 'CosmoW\ODM\Riak\Types\CollectionType',
+        self::INCREMENT => 'CosmoW\ODM\Riak\Types\IncrementType',
+        self::OBJECTID => 'CosmoW\ODM\Riak\Types\ObjectIdType',
+        self::RAW => 'CosmoW\ODM\Riak\Types\RawType',
     );
 
     /* Prevent instantiation and force use of the factory method. */
@@ -140,7 +140,7 @@ abstract class Type
      * Get a Type instance.
      *
      * @param string $type The type name.
-     * @return \Doctrine\ODM\Riak\Types\Type $type
+     * @return \CosmoW\ODM\Riak\Types\Type $type
      * @throws \InvalidArgumentException
      */
     public static function getType($type)
@@ -159,7 +159,7 @@ abstract class Type
      * Get a Type instance based on the type of the passed php variable.
      *
      * @param mixed $variable
-     * @return \Doctrine\ODM\Riak\Types\Type $type
+     * @return \CosmoW\ODM\Riak\Types\Type $type
      * @throws \InvalidArgumentException
      */
     public static function getTypeFromPHPVariable($variable)

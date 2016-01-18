@@ -81,7 +81,7 @@ class QueryExpressionVisitor extends ExpressionVisitor
      *
      * @see ExpressionVisitor::walkComparison()
      * @param Comparison $comparison
-     * @return \Doctrine\ODM\Riak\Query\Expr
+     * @return \CosmoW\ODM\Riak\Query\Expr
      */
     public function walkComparison(Comparison $comparison)
     {
@@ -118,7 +118,7 @@ class QueryExpressionVisitor extends ExpressionVisitor
      *
      * @see ExpressionVisitor::walkCompositeExpression()
      * @param CompositeExpression $expr
-     * @return \Doctrine\ODM\Riak\Query\Expr
+     * @return \CosmoW\ODM\Riak\Query\Expr
      */
     public function walkCompositeExpression(CompositeExpression $compositeExpr)
     {

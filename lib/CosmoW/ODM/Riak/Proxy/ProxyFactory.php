@@ -44,12 +44,12 @@ use ReflectionProperty;
 class ProxyFactory extends AbstractProxyFactory
 {
     /**
-     * @var \Doctrine\ODM\Riak\Mapping\ClassMetadataFactory
+     * @var \CosmoW\ODM\Riak\Mapping\ClassMetadataFactory
      */
     private $metadataFactory;
 
     /**
-     * @var \Doctrine\ODM\Riak\UnitOfWork The UnitOfWork this factory is bound to.
+     * @var \CosmoW\ODM\Riak\UnitOfWork The UnitOfWork this factory is bound to.
      */
     private $uow;
 
@@ -62,7 +62,7 @@ class ProxyFactory extends AbstractProxyFactory
      * Initializes a new instance of the <tt>ProxyFactory</tt> class that is
      * connected to the given <tt>DocumentManager</tt>.
      *
-     * @param \Doctrine\ODM\Riak\DocumentManager $documentManager The DocumentManager the new factory works for.
+     * @param \CosmoW\ODM\Riak\DocumentManager $documentManager The DocumentManager the new factory works for.
      * @param string                                $proxyDir        The directory to use for the proxy classes. It
      *                                                               must exist.
      * @param string                                $proxyNamespace  The namespace to use for the proxy classes.
@@ -75,7 +75,7 @@ class ProxyFactory extends AbstractProxyFactory
         $this->proxyNamespace  = $proxyNamespace;
         $proxyGenerator        = new ProxyGenerator($proxyDir, $proxyNamespace);
 
-        $proxyGenerator->setPlaceholder('baseProxyInterface', 'Doctrine\ODM\Riak\Proxy\Proxy');
+        $proxyGenerator->setPlaceholder('baseProxyInterface', 'CosmoW\ODM\Riak\Proxy\Proxy');
 
         parent::__construct($proxyGenerator, $this->metadataFactory, $autoGenerate);
     }
@@ -85,7 +85,7 @@ class ProxyFactory extends AbstractProxyFactory
      */
     public function skipClass(BaseClassMetadata $class)
     {
-        /* @var $class \Doctrine\ODM\Riak\Mapping\ClassMetadataInfo */
+        /* @var $class \CosmoW\ODM\Riak\Mapping\ClassMetadataInfo */
         return $class->isMappedSuperclass || $class->getReflectionClass()->isAbstract();
     }
 
@@ -94,7 +94,7 @@ class ProxyFactory extends AbstractProxyFactory
      */
     public function createProxyDefinition($className)
     {
-        /* @var $classMetadata \Doctrine\ODM\Riak\Mapping\ClassMetadataInfo */
+        /* @var $classMetadata \CosmoW\ODM\Riak\Mapping\ClassMetadataInfo */
         $classMetadata     = $this->metadataFactory->getMetadataFor($className);
         $documentPersister = $this->uow->getDocumentPersister($className);
         $reflectionId      = $classMetadata->reflFields[$classMetadata->identifier];
@@ -112,12 +112,12 @@ class ProxyFactory extends AbstractProxyFactory
      * Generates a closure capable of initializing a proxy
      *
      * @param \Doctrine\Common\Persistence\Mapping\ClassMetadata $classMetadata
-     * @param \Doctrine\ODM\Riak\Persisters\DocumentPersister $documentPersister
+     * @param \CosmoW\ODM\Riak\Persisters\DocumentPersister $documentPersister
      * @param \ReflectionProperty                                $reflectionId
      *
      * @return \Closure
      *
-     * @throws \Doctrine\ODM\Riak\DocumentNotFoundException
+     * @throws \CosmoW\ODM\Riak\DocumentNotFoundException
      */
     private function createInitializer(
         BaseClassMetadata $classMetadata,
@@ -192,12 +192,12 @@ class ProxyFactory extends AbstractProxyFactory
      * Generates a closure capable of finalizing a cloned proxy
      *
      * @param \Doctrine\Common\Persistence\Mapping\ClassMetadata $classMetadata
-     * @param \Doctrine\ODM\Riak\Persisters\DocumentPersister $documentPersister
+     * @param \CosmoW\ODM\Riak\Persisters\DocumentPersister $documentPersister
      * @param \ReflectionProperty                                $reflectionId
      *
      * @return \Closure
      *
-     * @throws \Doctrine\ODM\Riak\DocumentNotFoundException
+     * @throws \CosmoW\ODM\Riak\DocumentNotFoundException
      */
     private function createCloner(
         BaseClassMetadata $classMetadata,

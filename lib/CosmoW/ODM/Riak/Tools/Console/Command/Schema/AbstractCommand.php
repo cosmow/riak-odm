@@ -52,7 +52,7 @@ abstract class AbstractCommand extends Command
     }
 
     /**
-     * @return \Doctrine\ODM\Riak\DocumentManager
+     * @return \CosmoW\ODM\Riak\DocumentManager
      */
     protected function getDocumentManager()
     {
@@ -60,7 +60,7 @@ abstract class AbstractCommand extends Command
     }
 
     /**
-     * @return \Doctrine\ODM\Riak\Mapping\ClassMetadataFactory
+     * @return \CosmoW\ODM\Riak\Mapping\ClassMetadataFactory
      */
     protected function getMetadataFactory()
     {

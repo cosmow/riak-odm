@@ -274,7 +274,7 @@ class ClassMetadataInfo implements \Doctrine\Common\Persistence\Mapping\ClassMet
     /**
      * READ-ONLY: The ID generator used for generating IDs for this class.
      *
-     * @var \Doctrine\ODM\Riak\Id\AbstractIdGenerator
+     * @var \CosmoW\ODM\Riak\Id\AbstractIdGenerator
      */
     public $idGenerator;
 
@@ -1127,7 +1127,7 @@ class ClassMetadataInfo implements \Doctrine\Common\Persistence\Mapping\ClassMet
             $mapping['name'] = '_id';
             $this->identifier = $mapping['fieldName'];
             if (isset($mapping['strategy'])) {
-                $this->generatorType = constant('Doctrine\ODM\Riak\Mapping\ClassMetadata::GENERATOR_TYPE_' . strtoupper($mapping['strategy']));
+                $this->generatorType = constant('CosmoW\ODM\Riak\Mapping\ClassMetadata::GENERATOR_TYPE_' . strtoupper($mapping['strategy']));
             }
             $this->generatorOptions = isset($mapping['options']) ? $mapping['options'] : array();
             switch ($this->generatorType) {
@@ -1424,7 +1424,7 @@ class ClassMetadataInfo implements \Doctrine\Common\Persistence\Mapping\ClassMet
     /**
      * Sets the ID generator used to generate IDs for instances of this class.
      *
-     * @param \Doctrine\ODM\Riak\Id\AbstractIdGenerator $generator
+     * @param \CosmoW\ODM\Riak\Id\AbstractIdGenerator $generator
      */
     public function setIdGenerator($generator)
     {
@@ -1745,7 +1745,7 @@ class ClassMetadataInfo implements \Doctrine\Common\Persistence\Mapping\ClassMet
      *
      * @param array $mapping   The version field mapping array
      *
-     * @throws \Doctrine\ODM\Riak\LockException
+     * @throws \CosmoW\ODM\Riak\LockException
      */
     public function setLockMapping(array &$mapping)
     {

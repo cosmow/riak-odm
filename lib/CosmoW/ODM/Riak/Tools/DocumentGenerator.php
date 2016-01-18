@@ -29,7 +29,7 @@ use CosmoW\ODM\Riak\Types\Type;
  *     [php]
  *     $classes = $dm->getClassMetadataInfoFactory()->getAllMetadata();
  *
- *     $generator = new \Doctrine\ODM\Riak\Tools\DocumentGenerator();
+ *     $generator = new \CosmoW\ODM\Riak\Tools\DocumentGenerator();
  *     $generator->setGenerateAnnotations(true);
  *     $generator->setGenerateStubMethods(true);
  *     $generator->setRegenerateDocumentIfExists(false);

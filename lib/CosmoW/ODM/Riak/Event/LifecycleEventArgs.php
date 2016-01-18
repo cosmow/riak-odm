@@ -42,7 +42,7 @@ class LifecycleEventArgs extends BaseLifecycleEventArgs
     /**
      * Retrieves the associated DocumentManager.
      *
-     * @return \Doctrine\ODM\Riak\DocumentManager
+     * @return \CosmoW\ODM\Riak\DocumentManager
      */
     public function getDocumentManager()
     {

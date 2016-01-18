@@ -181,7 +181,7 @@ class ClassMetadataFactory extends AbstractClassMetadataFactory
         $class->setParentClasses($nonSuperclassParents);
 
         if ($this->evm->hasListeners(Events::loadClassMetadata)) {
-            $eventArgs = new \Doctrine\ODM\Riak\Event\LoadClassMetadataEventArgs($class, $this->dm);
+            $eventArgs = new \CosmoW\ODM\Riak\Event\LoadClassMetadataEventArgs($class, $this->dm);
             $this->evm->dispatchEvent(Events::loadClassMetadata, $eventArgs);
         }
     }
@@ -203,7 +203,7 @@ class ClassMetadataFactory extends AbstractClassMetadataFactory
      * Creates a new ClassMetadata instance for the given class name.
      *
      * @param string $className
-     * @return \Doctrine\ODM\Riak\Mapping\ClassMetadata
+     * @return \CosmoW\ODM\Riak\Mapping\ClassMetadata
      */
     protected function newClassMetadataInstance($className)
     {
@@ -215,10 +215,10 @@ class ClassMetadataFactory extends AbstractClassMetadataFactory
         $idGenOptions = $class->generatorOptions;
         switch ($class->generatorType) {
             case ClassMetadata::GENERATOR_TYPE_AUTO:
-                $class->setIdGenerator(new \Doctrine\ODM\Riak\Id\AutoGenerator($class));
+                $class->setIdGenerator(new \CosmoW\ODM\Riak\Id\AutoGenerator($class));
                 break;
             case ClassMetadata::GENERATOR_TYPE_INCREMENT:
-                $incrementGenerator = new \Doctrine\ODM\Riak\Id\IncrementGenerator($class);
+                $incrementGenerator = new \CosmoW\ODM\Riak\Id\IncrementGenerator($class);
                 if (isset($idGenOptions['key'])) {
                     $incrementGenerator->setKey($idGenOptions['key']);
                 }
@@ -228,12 +228,12 @@ class ClassMetadataFactory extends AbstractClassMetadataFactory
                 $class->setIdGenerator($incrementGenerator);
                 break;
             case ClassMetadata::GENERATOR_TYPE_UUID:
-                $uuidGenerator = new \Doctrine\ODM\Riak\Id\UuidGenerator($class);
+                $uuidGenerator = new \CosmoW\ODM\Riak\Id\UuidGenerator($class);
                 isset($idGenOptions['salt']) && $uuidGenerator->setSalt($idGenOptions['salt']);
                 $class->setIdGenerator($uuidGenerator);
                 break;
             case ClassMetadata::GENERATOR_TYPE_ALNUM:
-                $alnumGenerator = new \Doctrine\ODM\Riak\Id\AlnumGenerator($class);
+                $alnumGenerator = new \CosmoW\ODM\Riak\Id\AlnumGenerator($class);
                 if (isset($idGenOptions['pad'])) {
                     $alnumGenerator->setPad($idGenOptions['pad']);
                 }
@@ -252,7 +252,7 @@ class ClassMetadataFactory extends AbstractClassMetadataFactory
 
                 $customGenerator = new $idGenOptions['class'];
                 unset($idGenOptions['class']);
-                if ( ! $customGenerator instanceof \Doctrine\ODM\Riak\Id\AbstractIdGenerator) {
+                if ( ! $customGenerator instanceof \CosmoW\ODM\Riak\Id\AbstractIdGenerator) {
                     throw MappingException::classIsNotAValidGenerator(get_class($customGenerator));
                 }
 

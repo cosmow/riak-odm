@@ -87,10 +87,10 @@ class XmlDriver extends FileDriver
         }
         if (isset($xmlRoot['inheritance-type'])) {
             $inheritanceType = (string) $xmlRoot['inheritance-type'];
-            $class->setInheritanceType(constant('Doctrine\ODM\Riak\Mapping\ClassMetadata::INHERITANCE_TYPE_' . $inheritanceType));
+            $class->setInheritanceType(constant('CosmoW\ODM\Riak\Mapping\ClassMetadata::INHERITANCE_TYPE_' . $inheritanceType));
         }
         if (isset($xmlRoot['change-tracking-policy'])) {
-            $class->setChangeTrackingPolicy(constant('Doctrine\ODM\Riak\Mapping\ClassMetadata::CHANGETRACKING_' . strtoupper((string) $xmlRoot['change-tracking-policy'])));
+            $class->setChangeTrackingPolicy(constant('CosmoW\ODM\Riak\Mapping\ClassMetadata::CHANGETRACKING_' . strtoupper((string) $xmlRoot['change-tracking-policy'])));
         }
         if (isset($xmlRoot->{'discriminator-field'})) {
             $discrField = $xmlRoot->{'discriminator-field'};
@@ -182,7 +182,7 @@ class XmlDriver extends FileDriver
         }
         if (isset($xmlRoot->{'lifecycle-callbacks'})) {
             foreach ($xmlRoot->{'lifecycle-callbacks'}->{'lifecycle-callback'} as $lifecycleCallback) {
-                $class->addLifecycleCallback((string) $lifecycleCallback['method'], constant('Doctrine\ODM\Riak\Events::' . (string) $lifecycleCallback['type']));
+                $class->addLifecycleCallback((string) $lifecycleCallback['method'], constant('CosmoW\ODM\Riak\Events::' . (string) $lifecycleCallback['type']));
             }
         }
         if (isset($xmlRoot->{'also-load-methods'})) {

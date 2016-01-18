@@ -199,7 +199,7 @@ class AnnotationDriver extends AbstractAnnotationDriver
                     $class->registerAlsoLoadMethod($method->getName(), $annot->value);
                 }
 
-                if ( ! isset($classAnnotations['Doctrine\ODM\Riak\Mapping\Annotations\HasLifecycleCallbacks'])) {
+                if ( ! isset($classAnnotations['CosmoW\ODM\Riak\Mapping\Annotations\HasLifecycleCallbacks'])) {
                     continue;
                 }
 

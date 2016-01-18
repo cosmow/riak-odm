@@ -31,7 +31,7 @@ class LoadClassMetadataEventArgs extends BaseLoadClassMetadataEventArgs
     /**
      * Retrieves the associated DocumentManager.
      *
-     * @return \Doctrine\ODM\Riak\DocumentManager
+     * @return \CosmoW\ODM\Riak\DocumentManager
      */
     public function getDocumentManager()
     {

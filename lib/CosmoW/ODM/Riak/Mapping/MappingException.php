@@ -130,7 +130,7 @@ class MappingException extends BaseMappingException
      *
      * @param string $document The document's name
      * @param \ReflectionException $previousException
-     * @return \Doctrine\ODM\Riak\Mapping\MappingException
+     * @return \CosmoW\ODM\Riak\Mapping\MappingException
      */
     public static function reflectionFailure($document, \ReflectionException $previousException)
     {
